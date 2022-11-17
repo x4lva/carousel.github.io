@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-header">
+            HomeCarousel
+            <div class="dashboard-header-content">
+                <div class="dashboard-button dashboard-button__lg dashboard-button__link">
+                    Preview
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-title-container">
+            <h4 class="dashboard-title">
+                Carousel copy
+            </h4>
+        </div>
+
+        <div class="dashboard-input-container">
+            <input id="carousel-title" class="dashboard-input" />
+        </div>
+
+        <div class="dashboard-textarea-container">
+            <textarea id="carousel-content" rows="4" class="dashboard-textarea">
+            </textarea>
+        </div>
+
+        <div class="dashboard-title-container mb-9">
+            <h4 class="dashboard-title">
+                Carousel images
+            </h4>
+            <div class="dashboard-title-content">
+                <div id="carousel-save" class="dashboard-button dashboard-button__save">
+                    Save
+                </div>
+                <div id="carousel-remove-selected" class="dashboard-button dashboard-button__secondary dashboard-button__delete">
+                    Remove selected
+                </div>
+            </div>
+        </div>
+
+        <table class="dashboard-table" id="carousel-slides">
+            <thead>
+                <tr>
+                    <th>
+                        <label id="carousel-select-all" class="dashboard-table-checkbox">
+                            <input type="checkbox" title="Toggle Row Selected" style="cursor: pointer;">
+                            <div class="dashboard-table-checkbox-dec"></div>
+                        </label>
+                    </th>
+                    <th>No.</th>
+                    <th></th>
+                    <th data-field="title" class="dashboard-table-sortable">Title</th>
+                    <th data-field="numberOfPeople" class="dashboard-table-sortable">Number of people</th>
+                    <th data-field="link" class="dashboard-table-sortable">Link</th>
+                </tr>
+            </thead>
+            <tbody role="rowgroup">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
