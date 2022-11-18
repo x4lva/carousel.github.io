@@ -7,11 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (bg.dataset.image === el.dataset.image) return;
 
             bg.style.opacity = 0;
-            bg.style.backgroundImage = `url('assets/${el.dataset.image}')`;
             bg.dataset.image = el.dataset.image;
+
+            setTimeout(() => {
+                bg.style.backgroundImage = `url('assets/${el.dataset.image}')`;
+            }, 200);
+
             setTimeout(() => {
                 bg.style.opacity = 1;
-            }, 300)
+            }, 250);
         })
     })
 })
