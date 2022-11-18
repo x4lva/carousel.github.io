@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
             bg.dataset.image = el.dataset.image;
             setTimeout(() => {
                 bg.style.opacity = 1;
-            }, 200)
+            }, 300)
         })
     })
 })

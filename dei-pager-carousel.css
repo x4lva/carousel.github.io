@@ -71,7 +71,7 @@
     height: 100%;
     background-image: url("./assets/image1.png");
     opacity: 1;
-    transition: .2s;
+    transition: .3s ease-in-out;
     background-repeat: no-repeat;
 
 }
