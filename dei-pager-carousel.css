@@ -138,9 +138,9 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    right: -25px;
+    right: -20px;
     opacity: 0;
-    transition: .2s ease-in-out;
+    transition: .2s cubic-bezier(0.5, -1, 0.1, 1.5);
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.0074 33.9044L36.9411 19.9707M36.9411 19.9707L23.7219 6.75153M36.9411 19.9707H3' stroke='black' stroke-width='2.5'/%3E%3C/svg%3E%0A");
 }
 
