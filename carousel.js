@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             setTimeout(() => {
                 bg.style.backgroundImage = `url('assets/${el.dataset.image}')`;
-            }, 200);
+            }, 400);
 
             setTimeout(() => {
                 bg.style.opacity = 1;
-            }, 250);
+            }, 500);
         })
     })
 })
