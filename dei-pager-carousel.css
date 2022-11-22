@@ -130,6 +130,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
+}
+
+.dei-pager-carousel-text-link::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -25px;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.0074 33.9044L36.9411 19.9707M36.9411 19.9707L23.7219 6.75153M36.9411 19.9707H3' stroke='black' stroke-width='2.5'/%3E%3C/svg%3E%0A");
+}
+
+.dei-pager-carousel-text-link:hover::after {
+    opacity: 1;
+    right: -30px;
 }
 
 .dei-pager-carousel-text-link > a {
@@ -183,7 +200,7 @@
 }
 
 .dei-pager-carousel-item {
-    transition: 0.2s;
+    transition: 0.4s ease-in-out;
     position: relative;
     display: flex;
     flex-direction: row;
