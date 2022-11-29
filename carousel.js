@@ -1,21 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const items = document.querySelectorAll('.dei-pager-carousel-item-wrapper');
-    const bg = document.querySelector('#slider-container .dei-pager-carousel-container-image');
+    const wrappers = document.querySelectorAll('.dei-pager-carousel-wrapper');
 
-    Array.from(items).forEach(el => {
-        el.addEventListener('mouseenter', (e) => {
-            if (bg.dataset.image === el.dataset.image) return;
+    Array.from(wrappers).forEach(wrapper => {
+        const bg = wrapper.querySelector('.dei-pager-carousel-container-image');
+        const items = wrapper.querySelectorAll('.dei-pager-carousel-item-wrapper');
 
-            bg.style.opacity = 0;
-            bg.dataset.image = el.dataset.image;
+        Array.from(items).forEach(el => {
+            el.addEventListener('mouseenter', (e) => {
+                if (bg.dataset.image === el.dataset.image) return;
 
-            setTimeout(() => {
-                bg.style.backgroundImage = `url('assets/${el.dataset.image}')`;
-            }, 400);
+                bg.style.opacity = 0;
+                bg.dataset.image = el.dataset.image;
 
-            setTimeout(() => {
-                bg.style.opacity = 1;
-            }, 500);
+                setTimeout(() => {
+                    bg.style.backgroundImage = `url('assets/${el.dataset.image}')`;
+                }, 400);
+
+                setTimeout(() => {
+                    bg.style.opacity = 1;
+                }, 500);
+            })
         })
     })
 })
