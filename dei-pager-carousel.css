@@ -288,7 +288,14 @@
     bottom: 0;
 }
 
-.dei-pager-carousel-wrapper-overed .dei-pager-carousel-text-block-title, .dei-pager-carousel-text-block-title_bold {
+.dei-pager-carousel-wrapper-overed .dei-pager-carousel-text-block-title_bold {
+    font-size: 56px;
+    line-height: 64px;
+    margin-bottom: 175px;
+    font-weight: 600;
+}
+
+.dei-pager-carousel-wrapper-overed .dei-pager-carousel-text-block-title  {
     font-size: 56px;
     line-height: 64px;
     margin-bottom: 175px;
